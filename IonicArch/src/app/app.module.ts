@@ -9,27 +9,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ApiService, UserService} from './services';
-import { LoaderService } from './providers';
+import { SharedModule } from './modules';
 
-const SERVICES = [
-  ApiService, 
-  UserService
-];
-
-const PROVIDERS = [
-  LoaderService
-]
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, HttpClientModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, SharedModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
-    SERVICES,
-    PROVIDERS,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

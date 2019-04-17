@@ -16,7 +16,7 @@
   </ion-button>
   <ion-list>
     <ion-item *ngFor="let item of userList">
-      {{item.first_name}}
+      {{ item.first_name | truncate}}
     </ion-item>
   </ion-list>
 </ion-content>
