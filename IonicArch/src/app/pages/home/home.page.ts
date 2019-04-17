@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { UserService } from './../../services';
 import { UserModel, GetUserList } from '../../models';
-import { LoaderService } from '../../providers';
+import { LoaderService } from '../../shared/providers';
 
 @Component({
   selector: 'app-home',

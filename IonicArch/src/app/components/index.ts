@@ -1,1 +1,1 @@
-export * from './loader/loader.component';
+export * from './login-form/login-form.component';

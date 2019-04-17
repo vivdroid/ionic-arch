@@ -2,15 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { TruncatePipe } from './../../shared/pipes/';
-import { LoaderComponent } from './../../components';
+import { LoaderComponent } from './../../shared/components';
 
+const COMPONENTS = [
+  LoaderComponent
+]
+
+const PIPES = [
+  TruncatePipe
+]
 
 @NgModule({
-  declarations: [TruncatePipe, LoaderComponent],
+  declarations: [COMPONENTS, PIPES],
   imports: [
     IonicModule,
     CommonModule,
   ],
-  exports: [TruncatePipe, LoaderComponent]
+  exports: [COMPONENTS, PIPES]
 })
 export class SharedModule { }
