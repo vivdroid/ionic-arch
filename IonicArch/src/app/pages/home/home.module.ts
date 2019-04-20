@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { LoginFormComponent } from './../../components/login-form/login-form.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { LoginFormComponent } from './../../components/login-form/login-form.com
     FormsModule,
     IonicModule,
     SharedModule,
+    TranslateModule.forChild(),
     RouterModule.forChild([
       {
         path: '',
