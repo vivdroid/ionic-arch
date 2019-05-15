@@ -1,0 +1,152 @@
+@mixin heading-h1-xl {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0;
+}
+
+@mixin heading-h1 {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: 700;
+  font-size: 34px;
+  margin: 0;
+}
+
+@mixin heading-h2 {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: bold;
+  font-size: 23px;
+  margin: 0;
+}
+
+@mixin heading-h3 {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: 400;
+  font-size: 19px;
+  margin: 0;
+}
+
+@mixin text-regular {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: 400;
+  font-size: 16px;
+  //line-height: 20px;
+}
+
+@mixin text-medium {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: 400;
+  font-size: 14px;
+  //line-height: 20px;
+}
+
+@mixin text-small {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: 400;
+  font-size: 12px;
+  //line-height: 18px;
+}
+@mixin text-heavy {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@mixin text-heavy-medium {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@mixin text-stock {
+  font-family: var(--ion-font-family, "Atheltics");
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+h1 {
+  @include heading-h1;
+
+  &.heading-xl {
+    @include heading-h1-xl;
+  }
+}
+
+h2 {
+  @include heading-h2;
+}
+
+h3 {
+  @include heading-h3;
+}
+
+p {
+  margin: 0;
+  @include text-regular;
+
+  &.text-rg {
+    @include text-regular;
+  }
+
+  &.text-md {
+    @include text-medium;
+  }
+
+  &.text-sm {
+    @include text-small;
+  }
+
+  &.text-heavy {
+    @include text-heavy;
+  }
+  
+  &.text-heavy-medium {
+    @include text-heavy-medium;
+  }
+
+  &.text-stock {
+    @include text-stock;
+  }
+}
+
+a {
+  @include text-regular;
+
+  &:active {
+    opacity: 0.6;
+
+    &.no-click-effect {
+      opacity: 1;
+    }
+  }
+
+  &.text-md {
+    @include text-medium;
+  }
+
+  &.text-sm {
+    @include text-small;
+  }
+
+  &.text-heavy {
+    @include text-heavy;
+  }
+  
+  &.text-heavy-medium {
+    @include text-heavy-medium;
+  }
+
+  &.text-stock {
+    @include text-stock;
+  }
+}
+
+.text-error {
+  color: var(--ion-color-danger, #ff4600);
+}
+
+.text-info {
+  color: var(--ion-color-tertiary, #055fff);
+}

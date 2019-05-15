@@ -1,0 +1,61 @@
+.item-interactive.item-has-focus {
+  --highlight-color-valid: transparent;
+  --highlight-color-invalid: transparent;
+  --highlight-color-focused: var(--ion-color-tertiary, #055fff);
+  --border-color: var(--ion-color-tertiary, #055fff);
+}
+
+.validation-error.item-interactive {
+  --highlight-color-valid: var(--ion-color-dangar, #ff4600);
+}
+
+.item-interactive {
+  --highlight-color-valid: transparent;
+  --highlight-height: 1px;
+  //--detail-icon-color: var(--ion-color-primary, #000000);
+  //--detail-icon-opacity: 1;
+  //--highlight-color-invalid: transparent;
+}
+
+ion-icon.item-detail-icon {
+  padding-top: 30px;
+}
+
+ion-item {
+  --border-color: var(--ion-color-light, #eff3f7);
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-end: 0px;
+
+  .label-primary {
+    color: var(--ion-color-primary);
+  }
+
+  .label-secondary {
+    color: var(--ion-color-medium);
+  }
+}
+
+ion-item[no-background] {
+  --background: transparent;
+}
+
+.item-error-text {
+  color: var(--ion-color-dangar, #ff4600);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.item-info-text {
+  color: var(--ion-color-tertiary, #055fff);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.select-icon,
+.select-icon-inner {
+  border: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}

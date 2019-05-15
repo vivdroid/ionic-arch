@@ -1,0 +1,28 @@
+//ion-item.item-input,
+//ion-item.item-datetime,
+//ion-item.item-select {
+.item.item-label-floating.item-has-value {
+  ion-label {
+    &.sc-ion-label-md-h,
+    &.sc-ion-label-ios-h {
+      --color: var(--medium, #acafb2);
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.item.item-label-floating.item-has-focus {
+  ion-label {
+    &.sc-ion-label-md-h,
+    &.sc-ion-label-ios-h {
+      --color: var(--ion-color-tertiary, #acafb2);
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.item-input-has-focus .label-md[stacked],
+.input-has-focus .label-md[stacked],
+.item-input-has-focus .label-md[floating],
+.input-has-focus .label-md[floating] {
+}

@@ -1,0 +1,10 @@
+.info-popover .popover-content {
+  color: var(--ion-color-white);
+  --background: var(--ion-color-tertiary);
+  padding: 15px;
+  line-height: 1.43;
+}
+
+.info-popover .popover-arrow.sc-ion-popover-ios:after {
+  --background: var(--ion-color-tertiary);
+}

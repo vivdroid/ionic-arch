@@ -1,0 +1,14 @@
+ion-searchbar,
+.sc-ion-searchbar-md-h,
+.sc-ion-searchbar-ios-h {
+  --background: var(--ion-color-light);
+  --color: var(--ion-color-primary);
+  --icon-color: var(--ion-color-medium);
+  --cancel-button-color: var(--ion-color-danger);
+  --clear-button-color: var(--ion-color-danger);
+
+  .searchbar-input {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

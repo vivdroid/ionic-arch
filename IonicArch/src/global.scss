@@ -9,3 +9,63 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+
+//custom overrides
+@import "theme/ion-slides";
+@import "theme/ion-label";
+@import "theme/ion-list";
+@import "theme/ion-item";
+@import "theme/ion-button";
+@import "theme/ion-toast";
+@import "theme/ion-menu";
+@import "theme/ion-modal";
+@import "theme/ion-popover";
+@import "theme/ion-segment";
+@import "theme/ion-segment-button";
+@import "theme/ion-searchbar";
+@import "theme/text";
+@import "theme/browser";
+
+//utils
+.item-input[allow-clicks] ion-label,
+.item-datetime[allow-clicks] ion-label,
+.item-select[allow-clicks] ion-label {
+  pointer-events: all !important;
+}
+
+ion-content[no-scroll] {
+  --overflow: hidden;
+}
+
+.item-cover {
+  display: none;
+}
+
+hr {
+  background-color: #d4d7db;
+}
+
+.news-list-slider {
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0;
+    top: unset;
+  }
+}
+
+.themed {
+  --ion-toolbar-color: #919191 !important;
+  --ion-toolbar-color-unchecked: #919191 !important;
+  --ion-toolbar-color-checked: var(--ion-color-danger, #ff4600) !important;
+}
+
+.intl-tel-input {
+  display: block;
+  margin-top: 20px;
+
+  .country-list {
+    z-index: 20;
+  }
+}

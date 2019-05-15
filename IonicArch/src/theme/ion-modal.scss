@@ -1,0 +1,8 @@
+ion-modal {
+  &.semi-modal {
+    height: 50%;
+    top: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+}

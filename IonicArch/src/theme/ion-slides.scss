@@ -1,0 +1,15 @@
+.is-up {
+  .swiper-pagination-bullet-active {
+    --bullet-background-active: var(--ion-color-success, #2ad77d);
+  }
+}
+
+.is-down {
+  .swiper-pagination-bullet-active {
+    --bullet-background-active: var(--ion-color-danger, #ff4600);
+  }
+}
+
+.swiper-pagination-bullet-active {
+  --bullet-background-active: var(--ion-color-danger, #ff4600);
+}
